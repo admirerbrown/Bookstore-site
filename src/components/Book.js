@@ -1,8 +1,10 @@
-const Books = () => (
-  <div className="">
-    i am a book
-  </div>
+/* eslint-disable react/prop-types */
 
+const Book = ({ title, author }) => (
+  <div className="book-info">
+    <h3>{title}</h3>
+    <p>{author}</p>
+  </div>
 );
 
-export default Books;
+export default Book;
