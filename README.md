@@ -2,8 +2,6 @@
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
   <h3><b>BookStore-site README</b></h3>
 
@@ -22,6 +20,7 @@
   - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Future Features](#future-features)
   - [👥 Author ](#-author-)
   - [🤝 Contributing ](#-contributing-)
   - [Show your support ](#show-your-support-)
@@ -97,6 +96,13 @@ Open http://localhost:3000/ to view it in the browser.
 
 The page will automatically reload if you make changes to the code.
 You will see the build errors and lint warnings in the console.
+
+<!-- Future Features -->
+### Future Features
+i would like to add the following features in the future:
+- Add recommended books section based on the user's likeness
+- improve the ui to add logo animation
+- make app responsive on numerous devices to improve user experience
 
 <!-- AUTHORS -->
 
