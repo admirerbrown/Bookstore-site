@@ -1,0 +1,100 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  width: 90%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+/* navbar component */
+.navbar {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  height: 120px;
+}
+
+.navItem-container {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  justify-content: space-between;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* book component  */
+.book-holder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-item {
+  display: flex;
+  border: 1px solid black;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.divider {
+  border-left: 1px solid black;
+  height: 100px;
+}
+
+.sm-divider {
+  border-left: 1px solid black;
+  height: 30px;
+}
+
+.book-option {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+hr {
+  border-top: black;
+  width: 85%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.bk-btn {
+  border-style: none;
+  background-color: transparent;
+}
+
+/* form component  */
+.form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 85%;
+  gap: 15px;
+  margin-bottom: 200px;
+}
+
+.form-main {
+  display: flex;
+  gap: 30px;
+}
+
+.book-name,
+.book-title {
+  width: 50%;
+  height: 60px;
+}
