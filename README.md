@@ -64,6 +64,7 @@ To get a local copy up and running, follow these steps.
 - NPM
 - Render
 - Knowledge of Basic git commands
+- Redux duck architecture
 
 In order to run this project you need:
 
