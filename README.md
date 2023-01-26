@@ -3,8 +3,7 @@
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
-  <h3><b>BookStore-site README</b></h3>
-
+  
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -13,8 +12,9 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 \[BookStore-site\] ](#-bookstore-site-)
+- [Project Description .](#project-description-)
   - [🛠 Built With ](#-built-with-)
-    - [Tech Stack ](#tech-stack-)
+    - [Live Demo ](#live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -30,6 +30,8 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [BookStore-site] <a name="about-project"></a>
+<hr>
+# Project Description .
 
 > The Bookstore is a Single Page Application website that lets users to: 
 Display a list of books.
@@ -41,16 +43,9 @@ By building this application, i learnt how to use React and Redux.
 HTML, CSS, JavaScript, React and Redux
 </a>
 
-### Tech Stack <a name="tech-stack"></a>
-
-> I used the following tech stack to develop this project
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
+### Live Demo <a name="Live-Demo"></a>
+Coming Soon!
+<br>
 
 <!-- GETTING STARTED -->
 
@@ -137,4 +132,3 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./license) licensed

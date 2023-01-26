@@ -1,17 +1,25 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-
-import { addBook } from '../redux/books/books'; // action to dispatch..
+import { nanoid } from '@reduxjs/toolkit';
+import { postBook } from '../redux/apiCalls/booksApi';
 
 const Form = () => {
   const dispatch = useDispatch();
+
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('Select Category');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const book = { title, author };
-    dispatch(addBook(book));
+    const book = {
+      item_id: nanoid(),
+      title,
+      author,
+      category,
+    };
+
+    dispatch(postBook(book));
     setTitle('');
     setAuthor('');
   };
@@ -36,6 +44,18 @@ const Form = () => {
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
         />
+        <select
+          name="category-option"
+          id="category-option"
+          required
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="">{category}</option>
+          <option value="Romance">Romance</option>
+          <option value="Epic Adventure">Epic Adventure</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Drama">Drama</option>
+        </select>
         <input className="submit-btn" value="ADD BOOK" type="submit" />
       </form>
     </div>
