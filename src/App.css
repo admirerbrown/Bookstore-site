@@ -94,7 +94,10 @@ hr {
 }
 
 .book-name,
-.book-title {
-  width: 50%;
+.book-title,
+#category-option {
+  width: 30%;
   height: 60px;
+  font-size: 25px;
+  text-align: center;
 }

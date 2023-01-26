@@ -1,21 +1,21 @@
 import { useSelector, useDispatch } from 'react-redux';
 import Form from './Form';
 import Book from './Book';
-import { removeBook } from '../redux/books/books';
+import { deleteBook } from '../redux/apiCalls/booksApi';
 
-// export default BookHolder;
 const BookHolder = () => {
   const dispatch = useDispatch();
 
   const handleDelete = (bookId) => {
-    dispatch(removeBook({ id: bookId }));
+    dispatch(deleteBook({ id: bookId }));
   };
-  const bookList = useSelector((state) => state.book);
+
+  const bookList = useSelector((state) => state.bookApi.data);
 
   return (
     <div className="book-holder">
       {bookList.map((book) => (
-        <div key={book.id} className="book-item">
+        <div key={book.Id} className="book-item">
           <div className="sect-1">
             <Book title={book.title} author={book.author} />
             <br />
@@ -27,7 +27,7 @@ const BookHolder = () => {
               <button
                 type="button"
                 className="bk-btn"
-                onClick={() => handleDelete(book.id)}
+                onClick={() => handleDelete(book.Id)}
               >
                 Remove
               </button>
