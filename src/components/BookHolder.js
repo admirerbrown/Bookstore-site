@@ -17,6 +17,7 @@ const BookHolder = () => {
       {bookList.map((book) => (
         <div key={book.Id} className="book-item">
           <div className="sect-1">
+            <p className="cat">{book.category}</p>
             <Book title={book.title} author={book.author} />
             <br />
             <div className="book-option">
@@ -38,17 +39,29 @@ const BookHolder = () => {
             </div>
           </div>
           <div className="sect-2">
-            <p>64% completed</p>
-          </div>
-          <div className="divider" />
-          <div className="sect-3">
-            <p>CURRENT CHAPTER</p>
-            <p>CHAPTER 17</p>
+            <div className="progress-bar" />
+            <p className="p0">
+              64%
+              <br />
+              <span className="chapter-title">completed</span>
+            </p>
             <br />
-            <button type="button" className="update">
-              UPDATE PROGRESS
-            </button>
+
+            <div className="divider" />
+
+            <div className="sect-3">
+              <p className="chapter-title">
+                CURRENT CHAPTER
+                <br />
+                <span className="p1">CHAPTER 17</span>
+              </p>
+              <br />
+              <button type="button" className="update">
+                UPDATE PROGRESS
+              </button>
+            </div>
           </div>
+
         </div>
       ))}
       <hr />

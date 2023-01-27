@@ -2,8 +2,8 @@
 
 const Book = ({ title, author }) => (
   <div className="book-info">
-    <h3>{title}</h3>
-    <p>{author}</p>
+    <h3 className="b-title">{title}</h3>
+    <p className="b-author">{author}</p>
   </div>
 );
 
