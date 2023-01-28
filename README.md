@@ -44,7 +44,7 @@ HTML, CSS, JavaScript, React and Redux
 </a>
 
 ### Live Demo <a name="Live-Demo"></a>
-Coming Soon!
+ [click here](https://bookstore-cms.onrender.com)
 <br>
 
 <!-- GETTING STARTED -->
