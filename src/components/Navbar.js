@@ -23,7 +23,7 @@ const Navbar = () => {
               BOOKS
             </Link>
             <Link to="/categories" className={`nav-text ${activeLink === 'categories' ? 'active' : ''}`}>
-              CATEGORY
+              CATEGORIES
             </Link>
           </nav>
         </div>

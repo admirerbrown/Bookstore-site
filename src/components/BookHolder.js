@@ -43,7 +43,7 @@ const BookHolder = () => {
             <p className="p0">
               64%
               <br />
-              <span className="chapter-title">completed</span>
+              <span className="status">completed</span>
             </p>
             <br />
 
