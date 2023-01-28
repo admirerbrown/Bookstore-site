@@ -26,7 +26,7 @@ const Form = () => {
 
   return (
     <div className="form">
-      <h2> ADD NEW BOOK</h2>
+      <h2 className="f-head"> ADD NEW BOOK</h2>
       <form className="form-main" onSubmit={handleSubmit}>
         <input
           className="book-name"

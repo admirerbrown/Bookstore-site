@@ -1,29 +1,65 @@
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 .main {
-  width: 90%;
-  height: 100%;
-  border: 1px solid #ccc;
+  width: 100%;
+  box-shadow: 1px 1px 10px  rgba(204, 204, 204, 0.13);
+  margin-top: 30px;
 }
 
 /* navbar component */
 .navbar {
-  border: 1px solid black;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  height: 120px;
+  height: 100px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.banner {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: #0290ff;
+  font-weight: 700;
+}
+
+.pro-cont {
+  display: flex;
+  width: 40px;
+  border-color: #e8e8e8;
+  border-radius: 50%;
+  height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  color: #0290ff;
+  font-size: 20px;
+}
+
+.nav-text {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.9px;
+  font-size: 13px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.nav-text.active {
+  color: #0290ff;
 }
 
 .navItem-container {
   display: flex;
   align-items: center;
-  width: 85%;
+  width: 100%;
+  margin: 40px;
   justify-content: space-between;
 }
 
@@ -35,28 +71,102 @@
 
 /* book component  */
 .book-holder {
+  width: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  border: 1px solid rgba(204, 204, 204, 0.171);
+  background-color: #fafafa;
+  padding-top: 70px;
+  gap: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .book-item {
   display: flex;
-  border: 1px solid black;
-  width: 85%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+}
+
+.sect-1 {
+  margin-left: 20px;
+}
+
+.sect-2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-right: 20px;
+  justify-content: center;
+}
+
+.sect-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.p1 {
+  display: flex;
+  margin: 0;
+  font-weight: 300;
+  margin-top: 10px;
+  font-family: "Roboto Slab", serif;
+}
+
+.p0 {
+  font-size: 25px;
+}
+
+.p0,
+.divider {
+  margin-right: 20px;
+}
+
+.update {
+  display: flex;
+  font-size: 13px;
+  height: 35px;
+  background-color: #0290ff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 15px;
+  padding-bottom: 15px;
+  border-style: none;
+  cursor: pointer;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.status {
+  font-size: 14px;
+  color: #121212;
+  font-family: "Roboto Slab", serif;
+}
+
+.progress-bar {
+  display: flex;
+  width: 70px;
+  border: solid 5px #307bbe;
+  border-left-color: #e8e8e8;
+  border-radius: 50%;
+  height: 70px;
+  border-style: solid;
+  border-width: 5px;
 }
 
 .divider {
-  border-left: 1px solid black;
+  border-left: 2px solid #e8e8e8;
   height: 100px;
 }
 
 .sm-divider {
-  border-left: 1px solid black;
+  border-left: 3px solid #e8e8e8;
   height: 30px;
 }
 
@@ -64,28 +174,70 @@
   display: flex;
   gap: 15px;
   align-items: center;
+  margin-top: 15px;
 }
 
 hr {
-  border-top: black;
-  width: 85%;
-  margin-top: 40px;
+  border-top: 1px solid #e8e8e8;
+  width: 100%;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .bk-btn {
   border-style: none;
   background-color: transparent;
+  font-size: 18px;
+  color: #4386bf;
+  font-family: "Roboto Slab", serif;
+  cursor: pointer;
+}
+
+.chapter-title {
+  font-weight: 200;
+  font-size: 13px;
+  font-family: "Roboto Slab", serif;
+  color: #121212;
+}
+
+.b-title {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 22px;
+  margin-top: 10px;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: -0.2px;
+  font-weight: 700;
+}
+
+.b-author {
+  font-size: 17px;
+  color: #4386bf;
+  margin-top: 2px;
+  font-family: "Roboto Slab", serif;
+}
+
+.cat {
+  color: #2b2727af;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.book-info {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
 }
 
 /* form component  */
 .form {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  width: 85%;
+  width: 100%;
   gap: 15px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .form-main {
@@ -93,11 +245,51 @@ hr {
   gap: 30px;
 }
 
+.f-head {
+  font-family: "Montserrat", sans-serif;
+  color: #888;
+  letter-spacing: -0.18px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
 .book-name,
 .book-title,
 #category-option {
+  width: 40%;
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 5px;
+  padding-left: 10px;
+  color: #121212;
+}
+
+.submit-btn {
+  font-size: 13px;
   width: 30%;
-  height: 60px;
-  font-size: 25px;
-  text-align: center;
+  border-radius: 5px;
+  background-color: #0290ff;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+#category-option {
+  background-color: #fff;
+}
+
+/* category page */
+.cat-page-cont {
+  display: flex;
+  height: 400px;
+  background-color: #fafafa;
+  font-size: 50px;
+  align-items: center;
+  padding-left: 170px;
+  font-family: "Montserrat", sans-serif;
 }
