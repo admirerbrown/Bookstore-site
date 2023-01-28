@@ -131,4 +131,5 @@ Give a ⭐️ if you like this project!
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
+This project is [MIT](https://github.com/admirerbrown/Bookstore-site/blob/develop/LICENSE.md) licensed.
 
